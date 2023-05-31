@@ -55,12 +55,14 @@ function App() {
     })
   }
   return (
-    <div className="test">
-      <Title/>
-      {/*タグの中に渡すものとその名前を書くと，
+    <div className="wrapper">
+      <div className="container">
+        <Title/>
+        {/*タグの中に渡すものとその名前を書くと，
          そのコンポーネントにpropsを渡せる */}
-      <Form setCity={setCity} getWeather={getWeather}/>
-      <Results results={results}/>
+        <Form setCity={setCity} getWeather={getWeather}/>
+        <Results results={results}/>
+      </div>
     </div>
   );
 }
