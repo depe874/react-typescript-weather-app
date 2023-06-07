@@ -52,7 +52,11 @@ function App() {
         conditionText:data.current.condition.text,
         icon:data.current.condition.icon
       })
+      // cityのstateを初期状態に戻す
+      // 結果が表示されると同時にフォームに入力された文字をクリアする
+      setCity("");
     })
+      .catch(err => alert("エラーが発生しました．ページをリロードして，もう一度トライしてください．"))
   }
   return (
     <div className="wrapper">
@@ -60,7 +64,7 @@ function App() {
         <Title/>
         {/*タグの中に渡すものとその名前を書くと，
          そのコンポーネントにpropsを渡せる */}
-        <Form setCity={setCity} getWeather={getWeather}/>
+        <Form city={city} setCity={setCity} getWeather={getWeather}/>
         <Results results={results}/>
       </div>
     </div>

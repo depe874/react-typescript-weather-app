@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# React-TypeScript-Weather-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* 『はじめてつくるReactアプリ with TypeScript』の勉強メモ
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 構造
+![structure](imgs/class.jpg)
+
+## 実行画面
+![title](imgs/0607title.png)
+<br>
+![result](imgs/0607result.png)
+<br>
 
 ## Available Scripts
 
